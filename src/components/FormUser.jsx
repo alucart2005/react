@@ -1,5 +1,6 @@
 import { useForm } from 'react-hook-form'
 
+
 const FormUser = () => {
 
     const { register, handleSubmit, formState : { errors } } = useForm()
@@ -7,7 +8,11 @@ const FormUser = () => {
     //handleSubmit es la funcion que se ejecutara en el submit
 
     const getFormData = ( data ) => {
-        console.log(data)
+      //objeto.propiedad = valor
+      //objeto["propiedad"] = valor
+
+      data.id=Date.now()
+      console.log(data)
     }
 
 
