@@ -42,42 +42,51 @@ const FormUser = () => {
                     {...register("age")}
                     />
                 </div>
-                <div>
-                    <label htmlFor="user-vaccinated">Vacunacion completa</label>
-                    <input 
-                    id="user-vaccinated"
-                    type="checkbox" 
-                    { ...register("isVaccinated") }
-                    />
+                <div className="input-wrapper">
+                    <div className="input-inline">
+
+                        <label htmlFor="user-vaccinated">Vacunacion completa</label>
+                        <input 
+                        id="user-vaccinated"
+                        type="checkbox" 
+                        { ...register("isVaccinated") }
+                        />
+                    </div>
                 </div>
-                <div>
-                    <h4>Genero</h4>
-                    <label htmlFor="user-gender1">Hombre</label>
-                    <input 
-                    type="radio" 
-                    id="user-gender1"
-                    value="Male"
-                    name="user-gender"
-                    {...register("gender")}
-                    />
+                <div className="input-wrapper">
+                    <h6>Genero</h6>
+                    <div className="input-inline">
+                        <label htmlFor="user-gender1">Hombre</label>
+                        <input 
+                        type="radio" 
+                        id="user-gender1"
+                        value="Male"
+                        name="user-gender"
+                        {...register("gender")}
+                        />
+                    </div>
 
-                    <label htmlFor="user-gender2">Mujer</label>
-                    <input 
-                    type="radio" 
-                    id="user-gender2"
-                    value="Female"
-                    name="user-gender"
-                    {...register("gender")}
-                    />
+                    <div className="input-inline">
+                        <label htmlFor="user-gender2">Mujer</label>
+                        <input 
+                        type="radio" 
+                        id="user-gender2"
+                        value="Female"
+                        name="user-gender"
+                        {...register("gender")}
+                        />
+                    </div>
 
-                    <label htmlFor="user-gender3">Otro</label>
-                    <input 
-                    type="radio" 
-                    id="user-gender3"
-                    name="user-gender"
-                    value="Other"
-                    {...register("gender")}
-                    />
+                    <div className="input-inline">
+                        <label htmlFor="user-gender3">Otro</label>
+                        <input 
+                        type="radio" 
+                        id="user-gender3"
+                        name="user-gender"
+                        value="Other"
+                        {...register("gender")}
+                        />
+                    </div>
                     
                 </div>
                 <button type="submit">Enviar</button>
