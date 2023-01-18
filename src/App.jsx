@@ -3,6 +3,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Pokemons from "./pages/Pokemons";
 import PokemonDetail from "./pages/PokemonDetail";
+import { useSelector } from "react-redux";
 
 function App() {
   return (
